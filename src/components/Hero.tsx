@@ -1,23 +1,53 @@
-import { useTranslation } from 'react-i18next';
-import { ArrowRight } from 'lucide-react';
-
-export const Hero = () => {
-  const { t } = useTranslation();
-
+export default function Hero() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          {t('hero.title')}
-        </h2>
-        <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-          {t('hero.subtitle')}
-        </p>
-        <button className="inline-flex items-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl">
-          {t('hero.cta')}
-          <ArrowRight className="w-5 h-5" />
-        </button>
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/Home_remodel_04.png)',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-slate/95 via-slate/80 to-transparent"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+        <div className="max-w-3xl animate-fade-up">
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            Abu Dhabi's Most Trusted Home Remodeling & Maintenance Experts
+          </h1>
+          <p className="text-xl sm:text-2xl mb-8 text-gray-200 font-light leading-relaxed">
+            Quality workmanship. Premium materials. Fast turnaround. Every job guaranteed.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-teal hover:bg-slate transition-all duration-300 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105"
+            >
+              Get a Free Quote
+            </a>
+            <a
+              href="#portfolio"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-slate transition-all duration-300 rounded-lg hover:scale-105 hover:shadow-xl"
+            >
+              View Our Work
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
       </div>
     </section>
   );
-};
+}
