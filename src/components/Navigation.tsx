@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +18,11 @@ export default function Navigation() {
   }, []);
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Services', href: '#services' },
-    { label: 'Packages', href: '#packages' },
-    { label: 'Portfolio', href: '#portfolio' },
-    { label: 'Contact', href: '#contact' },
+    { label: t('nav.home'), href: '#home' },
+    { label: t('nav.services'), href: '#services' },
+    { label: t('nav.packages'), href: '#packages' },
+    { label: t('nav.portfolio'), href: '#portfolio' },
+    { label: t('nav.contact'), href: '#contact' },
   ];
 
   return (
@@ -31,12 +34,12 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="#home" className="flex items-center space-x-3">
+            <a href="#home" className="flex items-center gap-3">
               <div className="w-12 h-12 bg-gradient-to-br from-teal to-teal-light rounded-lg flex items-center justify-center">
                 <span className="text-xl font-bold text-white">EF</span>
               </div>
               <div>
-                <div className="font-display text-2xl font-bold text-teal">EliteFix</div>
+                <div className="font-display text-2xl font-bold text-teal">{t('brand')}</div>
                 <div className="text-xs text-gray-600 font-light">Crafted Right. Done Fast.</div>
               </div>
             </a>
@@ -54,17 +57,18 @@ export default function Navigation() {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             <a
               href="tel:+971569001888"
-              className="flex items-center space-x-2 text-slate hover:text-teal transition-all duration-300 hover:scale-105"
+              className="flex items-center gap-2 text-slate hover:text-teal transition-all duration-300 hover:scale-105"
             >
               <Phone className="w-5 h-5" />
               <span className="font-semibold">Call Now</span>
             </a>
             <a
               href="https://wa.me/971569001888"
-              className="flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               <MessageCircle className="w-5 h-5" />
               <span className="font-semibold">WhatsApp</span>
@@ -94,16 +98,19 @@ export default function Navigation() {
               </a>
             ))}
             <div className="pt-4 border-t space-y-3">
+              <div className="px-2 py-2">
+                <LanguageSwitcher />
+              </div>
               <a
                 href="tel:+971569001888"
-                className="flex items-center space-x-2 text-slate hover:text-teal hover:bg-teal/5 px-2 py-2 rounded transition-all duration-300"
+                className="flex items-center gap-2 text-slate hover:text-teal hover:bg-teal/5 px-2 py-2 rounded transition-all duration-300"
               >
                 <Phone className="w-5 h-5" />
                 <span className="font-semibold">Call Now</span>
               </a>
               <a
                 href="https://wa.me/971569001888"
-                className="flex items-center justify-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg"
+                className="flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg"
               >
                 <MessageCircle className="w-5 h-5" />
                 <span className="font-semibold">WhatsApp Us</span>

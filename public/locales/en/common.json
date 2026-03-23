@@ -1,0 +1,190 @@
+{
+  "brand": "Elite Fix Boutique",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "howItWorks": "How It Works",
+    "packages": "Packages",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transform Your Villa Into a Masterpiece",
+    "subtitle": "Expert renovation and maintenance services for luxury villas in Dubai",
+    "cta": "Get Free Quote",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "pillars": {
+    "quality": {
+      "title": "Premium Quality",
+      "description": "Highest standards using premium materials and expert craftsmanship"
+    },
+    "speed": {
+      "title": "Fast Execution",
+      "description": "On-time delivery with efficient project management"
+    },
+    "cost": {
+      "title": "Best Value",
+      "description": "Competitive pricing without compromising on quality"
+    },
+    "guarantee": {
+      "title": "Satisfaction Guaranteed",
+      "description": "Comprehensive warranty and lifetime support"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Comprehensive villa renovation and maintenance solutions",
+    "items": {
+      "villa_renovation": "Villa Renovation",
+      "bathroom_renovation": "Bathroom Renovation",
+      "kitchen_renovation": "Kitchen Renovation",
+      "painting": "Interior Painting",
+      "flooring": "Flooring Installation",
+      "carpentry": "Custom Carpentry",
+      "plumbing": "Plumbing Services",
+      "electrical": "Electrical Work",
+      "hvac": "HVAC Installation",
+      "landscaping": "Landscaping",
+      "maintenance": "Annual Maintenance",
+      "consultation": "Design Consultation"
+    }
+  },
+  "stats": {
+    "projects": {
+      "number": "500+",
+      "label": "Projects Completed"
+    },
+    "customers": {
+      "number": "1,200+",
+      "label": "Happy Customers"
+    },
+    "experience": {
+      "number": "15+",
+      "label": "Years Experience"
+    },
+    "team": {
+      "number": "80+",
+      "label": "Expert Team Members"
+    }
+  },
+  "process": {
+    "title": "Our 4-Step Process",
+    "steps": {
+      "consultation": {
+        "number": "01",
+        "title": "Consultation",
+        "description": "Understand your vision and requirements"
+      },
+      "planning": {
+        "number": "02",
+        "title": "Planning & Design",
+        "description": "Create detailed plans and design concepts"
+      },
+      "execution": {
+        "number": "03",
+        "title": "Execution",
+        "description": "Professional team handles all work with precision"
+      },
+      "handover": {
+        "number": "04",
+        "title": "Handover & Support",
+        "description": "Quality check and ongoing maintenance support"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "items": [
+      {
+        "name": "Ahmed Al Mansouri",
+        "role": "Villa Owner",
+        "text": "Elite Fix transformed our villa beautifully. The team was professional and delivered on time."
+      },
+      {
+        "name": "Fatima Al Maktoum",
+        "role": "Property Manager",
+        "text": "Outstanding craftsmanship and attention to detail. Highly recommended for any villa renovation."
+      },
+      {
+        "name": "Mohammed Al Kaabi",
+        "role": "Real Estate Developer",
+        "text": "Consistent quality and reliability. Elite Fix is our go-to partner for all renovation projects."
+      }
+    ]
+  },
+  "packages": {
+    "title": "Annual Maintenance Packages",
+    "subtitle": "Choose the perfect plan for your villa's maintenance needs",
+    "items": {
+      "silver": {
+        "name": "Silver",
+        "price": "AED 2,500",
+        "period": "per year",
+        "features": [
+          "Quarterly inspections",
+          "Basic repairs",
+          "Plumbing maintenance",
+          "Electrical checks",
+          "Priority support"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "price": "AED 5,000",
+        "period": "per year",
+        "features": [
+          "Monthly inspections",
+          "All Silver benefits",
+          "HVAC maintenance",
+          "Painting touch-ups",
+          "Landscaping care",
+          "24/7 support"
+        ]
+      },
+      "platinum": {
+        "name": "Platinum",
+        "price": "AED 8,500",
+        "period": "per year",
+        "features": [
+          "Weekly inspections",
+          "All Gold benefits",
+          "Deep cleaning",
+          "Premium materials",
+          "Dedicated team",
+          "Unlimited consultations",
+          "VIP concierge"
+        ]
+      }
+    },
+    "cta": "Get Started"
+  },
+  "portfolio": {
+    "title": "Featured Projects",
+    "subtitle": "Showcase of our recent villa renovations"
+  },
+  "form": {
+    "title": "Request a Free Quote",
+    "subtitle": "Fill out the form below and our team will contact you shortly",
+    "name": "Your Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "property": "Property Type",
+    "service": "Service Required",
+    "message": "Additional Details",
+    "submit": "Submit Request",
+    "success": "Quote request submitted successfully!",
+    "error": "Error submitting form. Please try again."
+  },
+  "footer": {
+    "company": "About Elite Fix",
+    "description": "Premium villa renovation and maintenance services in Dubai",
+    "contact": "Contact Information",
+    "address": "Dubai, United Arab Emirates",
+    "phone": "+971 4 XXX XXXX",
+    "email": "info@elitefix.ae",
+    "hours": "24/7 Service Available",
+    "rights": "All rights reserved"
+  }
+}
