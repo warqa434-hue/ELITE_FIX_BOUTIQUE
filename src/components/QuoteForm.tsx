@@ -21,6 +21,10 @@ export default function QuoteForm() {
     setSubmitStatus('idle');
 
     try {
+      if (!supabase) {
+        throw new Error('Supabase is not configured');
+      }
+
       const { error } = await supabase.from('quote_requests').insert({
         name: formData.name,
         email: formData.email,
