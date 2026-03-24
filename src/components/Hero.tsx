@@ -2,13 +2,14 @@ import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
   const { t } = useTranslation();
+  const heroImage = `${import.meta.env.BASE_URL}Home_remodel_04.png`;
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/Home_remodel_04.png)',
+          backgroundImage: `url(${heroImage})`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-slate/95 via-slate/80 to-transparent rtl:bg-gradient-to-l"></div>

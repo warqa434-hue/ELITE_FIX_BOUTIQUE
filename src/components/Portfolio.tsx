@@ -1,6 +1,9 @@
 import { Eye } from 'lucide-react';
 
 export default function Portfolio() {
+  const withBase = (assetPath: string) =>
+    `${import.meta.env.BASE_URL}${assetPath.replace(/^\/+/, '')}`;
+
   const projects = [
     {
       title: 'Luxury Villa Renovation',
@@ -21,7 +24,7 @@ export default function Portfolio() {
       location: 'Zayed City',
       value: 'AED 55,000',
       category: 'Bathroom',
-      image: '/MBR.png',
+      image: withBase('/MBR.png'),
     },
     {
       title: 'Apartment Modernization',
@@ -42,7 +45,9 @@ export default function Portfolio() {
       location: 'Al Mushrif',
       value: 'AED 120,000',
       category: 'Exterior',
-      image: '/A_realistic,_sun-drenched_outdoor_family_sitting_area,_featuring_rustic_Spanish_terracotta_tiles_underfoot._Warm,_inviting_LED_lights_softly_illuminate_the_steps._A_sleek,_modern_BBQ_grill_stands_ready_for_use._Th.jpg',
+      image: withBase(
+        '/A_realistic,_sun-drenched_outdoor_family_sitting_area,_featuring_rustic_Spanish_terracotta_tiles_underfoot._Warm,_inviting_LED_lights_softly_illuminate_the_steps._A_sleek,_modern_BBQ_grill_stands_ready_for_use._Th.jpg'
+      ),
     },
   ];
 
